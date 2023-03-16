@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/detail.css' %}"/>      
+    <div class="section">
+        <div class="writer">
+        <h2 style="text-align: right; background-color: rgb(70, 69, 69);"> <div class="title">{{obj.title}}</div> </h2>
+        <small><div class="time" id="row21">{{obj.data_added}}</div></small>
+        <div class="photo" id="row12"><img src="/media/{{obj.writer_img}}" alt="..."/></div>
+        <div class="contact" id="row23">{{obj.writer_name}}</div>
+        <div class="name" id="row22">{{obj.phone}}</div>
+        </div>
+        <div class="pic"><img src="/media/{{obj.visual}}" alt="..."/ width=100%></div>
+        <div class="content">{{obj.contnt | safe }}</div>      
+    </div>
+{% endblock %}

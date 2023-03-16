@@ -1,0 +1,40 @@
+    {% extends 'base.html' %}
+    {% block content %}
+    {% load static %}
+    <section>
+    <div class="card-group ">
+      <div class="card" style="margin:10px;">
+        <img src="{% static 'photos/madarsa_image.jpg' %}" class="card-img-top" alt="..." style="height:210px">
+        <div class="card-body">
+          <h5 class="card-title">Learning</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          <a href="#" class="btn btn-primery">Go To Page</a>
+        </div>
+      </div>
+      <div class="card" style="margin:10px">
+        <img src="{% static 'photos/history_image.jpg' %}" class="card-img-top" alt="..." style="height:210px">
+        <div class="card-body">
+          <h5 class="card-title">Islamic History</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          <a href="#" class="btn btn-primery">Go To Page</a>
+        </div>
+      </div>
+      <div class="card" style="margin:10px">
+        <img src="{% static 'photos/islamandscience.jpg' %}" class="card-img-top" alt="..." style="height:210px">
+        <div class="card-body">
+          <h5 class="card-title">Islam and Science</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          <a href="#" class="btn btn-primery">Go To Page</a>
+        </div>
+      </div>
+      <div class="card" style="margin:10px">
+        <img src="{% static 'photos/muslim_women.webp' %}" class="card-img-top" alt="..." style="height:210px">
+        <div class="card-body">
+          <h5 class="card-title">Islamic Women</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          <a href="#" class="btn btn-primery">Go To Page</a>
+        </div>
+      </div>
+    </div>
+  </section>
+ {% endblock %}

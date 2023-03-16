@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="upper" style="height:50px; text-align: right; color: brown; font-size: 20px; padding-top: 10px;">Urdu Articles-اردو مضامین</div>
+<div class="article"  style ="width: 75%; margin-left: auto;">
+  <div class="container" style="text-align: right;">
+    <div class="row">
+    {% for post in posts%}
+        <div class="col-lg-4 col-sm-6">
+          <div class="card" style="padding:0px">
+            <img src="/media/{{post.visual}}" src="..." alt="Card image cap" height="200px">
+            <div class="card-body">
+              <a href="{% url 'detail' post.id %}"><h5 class="card-title">{{post.title}}</h5></a>
+              <p class="card-text"><small class="text-muted">{{post.data_added}}</small></p>           
+            </div>
+          </div>
+    </div>
+    
+    {% endfor %}
+    </div>
+  </div>
+</div>
+{% endblock %}

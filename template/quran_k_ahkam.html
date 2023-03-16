@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quran k Ahkam</title>
+</head>
+<body>
+    <h1 style="text-align: center;">This is the main page of Quran ka Ilm</h1>
+    <section class="section">
+        <div class="container">
+               {% block content %}
+                    {% for post in posts%}
+                        <div class="post block">
+                            <h2 class="subtitle">{{post.title}}</h2>
+                            <h3 class="slug">{{post.slug}}</h3>
+                            <small>Posted at:{{post.data_added}}</small>
+                            <div>
+                            <img src="/media/{{post.news_img}}"/>
+                            </div>
+                            <p>{{post.body}}</p>
+                        </div>
+                    {% endfor %}
+               {% endblock%}
+        </div>
+    </section>
+</body>
+</html>
